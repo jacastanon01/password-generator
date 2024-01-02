@@ -1,7 +1,8 @@
 # Password Generator
 
-<img src='./assets/screenshot1.png' alt='screenshot' style='height:300px; width:250px;' />
-<img src='./assets/screenshot2.png' alt='screenshot' style='height:300px; width:250px;' />
+<img width="1289" alt="Screenshot 2024-01-01 at 11 14 10 PM" src="https://github.com/jacastanon01/password-generator/assets/24418510/5d640cc5-39a7-463d-a75c-e2524603c300">
+<img width="442" alt="Screenshot 2024-01-01 at 11 15 08 PM" src="https://github.com/jacastanon01/password-generator/assets/24418510/8601a49f-3c2e-4031-94e3-94752318d23d">
+<img width="940" alt="Screenshot 2024-01-01 at 11 15 47 PM" src="https://github.com/jacastanon01/password-generator/assets/24418510/84770eee-7ad5-47bf-b49a-a95368d1bcd8">
 
 ### 📝 Brief
 
