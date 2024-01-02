@@ -1,10 +1,12 @@
 import { useRequirements } from '@/context/utils';
-import { generatePassword } from '@/lib/utils';
+import { calculateStrength, generatePassword } from '@/lib/utils';
 import { useToast } from '../ui/use-toast';
 
 const SubmitButton = () => {
   const [state, dispatch] = useRequirements();
+  const passwordStrength = calculateStrength(state);
   const { toast } = useToast();
+
   function handleClick() {
     const newPassword = generatePassword(state);
     if (!newPassword) {
@@ -22,12 +24,13 @@ const SubmitButton = () => {
   }
 
   return (
-    <section
+    <button
       onClick={handleClick}
-      className='mt-8 p-4 rounded-lg bg-gradient-to-r text-xl font-medium tracking-wide text-center from-primary to-primary-700 hover:cursor-pointer hover:opacity-90'
+      disabled={passwordStrength === 'weak'}
+      className='mt-8 p-4 w-full rounded-lg bg-gradient-to-r text-xl font-medium tracking-wide text-center from-primary to-primary-700 hover:opacity-90'
     >
       Generate password
-    </section>
+    </button>
   );
 };
 

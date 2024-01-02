@@ -1,5 +1,11 @@
 import { ClipboardCopy } from 'lucide-react';
 import { useToast } from '../ui/use-toast';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+  TooltipProvider,
+} from '../ui/tooltip';
 
 import { useRequirements } from '@/context/utils';
 
@@ -28,7 +34,20 @@ const PasswordDisplay = () => {
         {state.password || ''}
       </p>
       <div className='ml-auto hover:cursor-pointer'>
-        <ClipboardCopy onClick={copyToClipboard} />
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <ClipboardCopy onClick={copyToClipboard} />
+            </TooltipTrigger>
+            <TooltipContent
+              sideOffset={10}
+              align='start'
+              side='bottom'
+            >
+              <p>Copy password to clipboard</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
       </div>
     </section>
   );
