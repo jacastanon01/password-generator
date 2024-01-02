@@ -1,8 +1,8 @@
 import RangeLength from './RangeLength';
 import Settings from './Settings';
-import SubmitButton from './SubmitButton';
 import PasswordDisplay from './PasswordDisplay';
 import StrengthDisplay from './StrengthDisplay';
+import SubmitButtonTooltip from './SubmitButtonTooltip';
 
 const PasswordForm = () => {
   return (
@@ -10,7 +10,7 @@ const PasswordForm = () => {
       <StrengthDisplay />
       <RangeLength />
       <Settings />
-      <SubmitButton />
+      <SubmitButtonTooltip />
       <PasswordDisplay />
     </div>
   );

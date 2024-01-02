@@ -1,10 +1,13 @@
 import { useRequirements } from '@/context/utils';
-import { calculateStrength, generatePassword } from '@/lib/utils';
+import { generatePassword } from '@/lib/utils';
 import { useToast } from '../ui/use-toast';
 
-const SubmitButton = () => {
+const SubmitButton = ({
+  passwordStrength,
+}: {
+  passwordStrength: string;
+}) => {
   const [state, dispatch] = useRequirements();
-  const passwordStrength = calculateStrength(state);
   const { toast } = useToast();
 
   function handleClick() {

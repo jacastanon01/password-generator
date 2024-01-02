@@ -1,4 +1,5 @@
 import { ClipboardCopy } from 'lucide-react';
+
 import { useToast } from '../ui/use-toast';
 import {
   Tooltip,
@@ -6,7 +7,6 @@ import {
   TooltipTrigger,
   TooltipProvider,
 } from '../ui/tooltip';
-
 import { useRequirements } from '@/context/utils';
 
 const PasswordDisplay = () => {
