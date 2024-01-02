@@ -53,6 +53,9 @@ export function calculateStrength(
       return 'medium';
     }
   } else {
-    return settings.passwordLength >= 16 ? 'medium' : 'weak';
+    return settings.passwordLength >= 16 &&
+      passwordSettings.length > 1
+      ? 'medium'
+      : 'weak';
   }
 }

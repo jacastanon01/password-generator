@@ -13,7 +13,7 @@ const StrengthDisplay = () => {
       : 'text-primary';
   return (
     <p
-      className={`text-xl font-medium w-full text-center uppercase ${color}`}
+      className={`text-xl mt-4 mb-2 font-medium w-full text-center uppercase ${color}`}
     >
       Strength: {passwordStrength}
     </p>

@@ -1,5 +1,4 @@
 import PasswordForm from './components/passwordForm/PasswordForm';
-import StrengthDisplay from './components/passwordForm/StrengthDisplay';
 
 function App() {
   return (
@@ -8,7 +7,6 @@ function App() {
         <h1 className='text-2xl font-bold tracking-wide sm:text-4xl'>
           Password Generator
         </h1>
-        <StrengthDisplay />
         <PasswordForm />
       </div>
     </main>

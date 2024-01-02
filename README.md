@@ -1,30 +1,26 @@
-# React + TypeScript + Vite
+# Password Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img src='./assets/screenshot1.png' alt='screenshot' style='height:300px; width:250px;' />
+<img src='./assets/screenshot2.png' alt='screenshot' style='height:300px; width:250px;' />
 
-Currently, two official plugins are available:
+### 📝 Brief
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Your challenge is to build out this password generator app and get it looking as close to the design as possible. Your users should be able to:
 
-## Expanding the ESLint configuration
+- Generate a password based on the selected inclusion options
+- Copy the generated password to the computer's clipboard
+- See a strength rating for their generated password
+- View the optimal layout for the interface depending on their device's screen size
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 🔗 Links
 
-- Configure the top-level `parserOptions` property like this:
+- [Challenge Details](https://www.frontendmentor.io/challenges/password-generator-app-Mr8CLycqjh)
+- [Github Repo](https://github.com/jacastanon01/password-generator)
+- [Demo](https://password-generator-alpha-azure.vercel.app/)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### Tech stack
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+![react](https://skillicons.dev/icons?i=react)
+![typescript](https://skillicons.dev/icons?i=ts)
+![tailwind](https://skillicons.dev/icons?i=tailwind)
+![vite](https://skillicons.dev/icons?i=vite)
